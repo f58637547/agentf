@@ -1,4 +1,4 @@
-[@ai16z/eliza v0.1.4-alpha.3](../index.md) / ITranscriptionService
+[@ai16z/eliza v0.1.5-alpha.3](../index.md) / ITranscriptionService
 
 # Interface: ITranscriptionService
 
@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[packages/core/src/types.ts:951](https://github.com/ai16z/eliza/blob/main/packages/core/src/types.ts#L951)
+[packages/core/src/types.ts:1036](https://github.com/f58637547/agentf/blob/main/packages/core/src/types.ts#L1036)
 
 ## Methods
 
@@ -48,7 +48,7 @@ Add abstract initialize method that must be implemented by derived classes
 
 #### Defined in
 
-[packages/core/src/types.ts:956](https://github.com/ai16z/eliza/blob/main/packages/core/src/types.ts#L956)
+[packages/core/src/types.ts:1041](https://github.com/f58637547/agentf/blob/main/packages/core/src/types.ts#L1041)
 
 ***
 
@@ -66,7 +66,7 @@ Add abstract initialize method that must be implemented by derived classes
 
 #### Defined in
 
-[packages/core/src/types.ts:1049](https://github.com/ai16z/eliza/blob/main/packages/core/src/types.ts#L1049)
+[packages/core/src/types.ts:1134](https://github.com/f58637547/agentf/blob/main/packages/core/src/types.ts#L1134)
 
 ***
 
@@ -84,7 +84,7 @@ Add abstract initialize method that must be implemented by derived classes
 
 #### Defined in
 
-[packages/core/src/types.ts:1050](https://github.com/ai16z/eliza/blob/main/packages/core/src/types.ts#L1050)
+[packages/core/src/types.ts:1135](https://github.com/f58637547/agentf/blob/main/packages/core/src/types.ts#L1135)
 
 ***
 
@@ -102,7 +102,7 @@ Add abstract initialize method that must be implemented by derived classes
 
 #### Defined in
 
-[packages/core/src/types.ts:1053](https://github.com/ai16z/eliza/blob/main/packages/core/src/types.ts#L1053)
+[packages/core/src/types.ts:1138](https://github.com/f58637547/agentf/blob/main/packages/core/src/types.ts#L1138)
 
 ***
 
@@ -120,4 +120,4 @@ Add abstract initialize method that must be implemented by derived classes
 
 #### Defined in
 
-[packages/core/src/types.ts:1054](https://github.com/ai16z/eliza/blob/main/packages/core/src/types.ts#L1054)
+[packages/core/src/types.ts:1139](https://github.com/f58637547/agentf/blob/main/packages/core/src/types.ts#L1139)

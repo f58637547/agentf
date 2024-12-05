@@ -44,4 +44,12 @@ cache/*
 packages/plugin-coinbase/src/plugins/transactions.csv
 packages/plugin-coinbase/package-lock.json
 
+tsup.config.bundled_*.mjs
+
 .turbo
+
+packages/core/project_summary.md
+scripts/docs/
+scripts/knowledge.js
+scripts/traits.js
+scripts/traits/

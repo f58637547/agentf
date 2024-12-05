@@ -95,7 +95,7 @@ export async function buildConversationThread(
                     currentTweet.userId === client.profile.id
                         ? client.runtime.agentId
                         : stringToUuid(currentTweet.userId),
-                embedding: getEmbeddingZeroVector(client.runtime),
+                embedding: getEmbeddingZeroVector(),
             });
         }
 
@@ -192,8 +192,8 @@ export async function sendTweet(
                 id: tweetResult.rest_id,
                 text: tweetResult.legacy.full_text,
                 conversationId: tweetResult.legacy.conversation_id_str,
-                //createdAt:
-                timestamp: tweetResult.timestamp * 1000,
+                timestamp:
+                    new Date(tweetResult.legacy.created_at).getTime() / 1000,
                 userId: tweetResult.legacy.user_id_str,
                 inReplyToStatusId: tweetResult.legacy.in_reply_to_status_id_str,
                 permanentUrl: `https://twitter.com/${twitterUsername}/status/${tweetResult.rest_id}`,
@@ -229,7 +229,7 @@ export async function sendTweet(
                 : undefined,
         },
         roomId,
-        embedding: getEmbeddingZeroVector(client.runtime),
+        embedding: getEmbeddingZeroVector(),
         createdAt: tweet.timestamp * 1000,
     }));
 

@@ -1,4 +1,4 @@
-[@ai16z/eliza v0.1.4-alpha.3](../index.md) / Character
+[@ai16z/eliza v0.1.5-alpha.3](../index.md) / Character
 
 # Type Alias: Character
 
@@ -128,39 +128,57 @@ Optional prompt templates
 
 > `optional` **discordMessageHandlerTemplate**: `string`
 
-### bio
+### templates.base?
 
-> **bio**: `string` \| `string`[]
+> `optional` **base**: `object`
+
+New template format
+
+#### Index Signature
+
+ \[`key`: `string`\]: `string`
+
+### templates.evolved?
+
+> `optional` **evolved**: `object`
+
+#### Index Signature
+
+ \[`key`: `string`\]: `string`
+
+### bio?
+
+> `optional` **bio**: `string` \| `string`[]
 
 Character biography
 
-### lore
+### lore?
 
-> **lore**: `string`[]
+> `optional` **lore**: `string`[]
 
 Character background lore
 
-### messageExamples
+### messageExamples?
 
-> **messageExamples**: [`MessageExample`](../interfaces/MessageExample.md)[][]
+> `optional` **messageExamples**: [`MessageExample`](../interfaces/MessageExample.md)[][]
 
 Example messages
 
-### postExamples
+### postExamples?
 
-> **postExamples**: `string`[]
+> `optional` **postExamples**: `string`[]
 
 Example posts
 
-### topics
+### topics?
 
-> **topics**: `string`[]
+> `optional` **topics**: `string`[]
 
 Known topics
 
-### adjectives
+### adjectives?
 
-> **adjectives**: `string`[]
+> `optional` **adjectives**: `string`[]
 
 Character traits
 
@@ -211,6 +229,36 @@ Optional configuration
 ### settings.voice.url?
 
 > `optional` **url**: `string`
+
+### settings.voice.elevenlabs?
+
+> `optional` **elevenlabs**: `object`
+
+### settings.voice.elevenlabs.voiceId
+
+> **voiceId**: `string`
+
+New structured ElevenLabs config
+
+### settings.voice.elevenlabs.model?
+
+> `optional` **model**: `string`
+
+### settings.voice.elevenlabs.stability?
+
+> `optional` **stability**: `string`
+
+### settings.voice.elevenlabs.similarityBoost?
+
+> `optional` **similarityBoost**: `string`
+
+### settings.voice.elevenlabs.style?
+
+> `optional` **style**: `string`
+
+### settings.voice.elevenlabs.useSpeakerBoost?
+
+> `optional` **useSpeakerBoost**: `string`
 
 ### settings.model?
 
@@ -266,9 +314,9 @@ Optional client-specific config
 
 > `optional` **shouldIgnoreDirectMessages**: `boolean`
 
-### style
+### style?
 
-> **style**: `object`
+> `optional` **style**: `object`
 
 Writing style guides
 
@@ -312,4 +360,4 @@ Optional Twitter profile
 
 ## Defined in
 
-[packages/core/src/types.ts:601](https://github.com/ai16z/eliza/blob/main/packages/core/src/types.ts#L601)
+[packages/core/src/types.ts:669](https://github.com/f58637547/agentf/blob/main/packages/core/src/types.ts#L669)
